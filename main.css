@@ -8,6 +8,9 @@
 .container {
 	height: 100vh;
 	background: rgb(22, 22, 24);
+	background-image: url("./components/pexels3.jpeg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 .main-title {
 	position: absolute;
@@ -19,7 +22,7 @@
 nav {
 	position: absolute;
 	display: flex;
-	padding: 5rem 10rem;
+	padding: 1rem 1rem;
 	justify-content: space-between;
 	width: 100%;
 }
@@ -31,8 +34,13 @@ nav {
 	padding: 5rem 10rem;
 	text-align: center;
 }
-.button {
-	background-color: rgb(22, 22, 24);
+/* .button {
+	background-color: linear-gradient(
+		to right,
+		rgba(57, 255, 20, 0.75),
+		rgba(255, 0, 0, 0.75)
+	);
+
 	border: none;
 	padding: 10px 20px;
 	text-align: center;
@@ -46,14 +54,85 @@ nav {
 }
 
 .button:hover {
-	background-color: #4caf50;
+	background-color: linear-gradient(
+		to right,
+		rgba(57, 255, 20, 0.75),
+		rgba(255, 0, 0, 0.75)
+	);
+
 	color: rgb(22, 22, 24);
+} */
+
+.btn {
+	/* background-color: rgba(22, 22, 24, 0.75);
+	/* flex: 1 1 auto; */
+	padding: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	/* margin: 0rem 7rem; */
+	background-size: 200% auto;
+	text-decoration: none;
+	font-size: 15px;
+	/* font-weight: bold; */
+	letter-spacing: 5px;
+	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+	/* box-shadow: 0 0 10px #eee; */
+	border-radius: 10px; */
 }
-
-.button.main {
+.btn-main {
+	flex: 1 1 auto;
+	margin: 10px;
+	padding: 20px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	background-size: 200% auto;
+	color: white;
+	text-decoration: none;
+	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+	/* box-shadow: 0 0 10px #eee; */
+	border-radius: 20px;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.btn:hover {
+	transition: 3s;
+	background-position: right center; /* change the direction of the change here */
+}
+.btn-main:hover {
+	transition: 3s;
+	background-position: right center;
+    color: black;
+    cursor: pointer;
+    
+    letter-spacing: 10px; /* change the direction of the change here */
+}
+.btn-1 {
+	background-image: linear-gradient(
+		to right,
+		#ec38bc 0%, 
+        #7303c0 51%, 
+        cyan 100%
+	);
+    
 	position: absolute;
-
+}
+.main {
 	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+.btn-2 {
+	border: 2px solid #7303c0;
+	color: white;
+}
+.btn-2:hover {
+	background-image: linear-gradient(
+		to right,
+		#ec38bc 0%, 
+        #7303c0 51%, 
+        cyan 100%
+	);
+    color: black;
 }
