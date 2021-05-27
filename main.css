@@ -12,13 +12,20 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.main-title {
+
+.container h2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 7rem;
+	font-size: 7vw;
+	background: linear-gradient(to right, #ec38bc 0%, #7303c0 51%, cyan 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke: 1px #fff;
+	white-space: nowrap;
 }
+
 nav {
 	position: absolute;
 	display: flex;
@@ -104,7 +111,7 @@ nav {
 .btn-main:hover {
 	transition: 1.5s;
 	background-position: right center;
-	color: black;
+	color: #7303c0;
 	cursor: pointer;
 
 	letter-spacing: 10px; /* change the direction of the change here */
@@ -135,5 +142,26 @@ nav {
 		#7303c0 51%,
 		cyan 100%
 	);
-	color: black;
+	color: #7303c0;
 }
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 7px;
+	font-family: "cardo";
+	letter-spacing: 2px;
+	font-size: 10px;
+	color: white;
+	text-align: center;
+	background: rgb(20, 20, 24);
+}
+/* @media screen and (max-width: 768px) {
+	h1 {
+		font-size: 15px;
+	}
+	h2 {
+		font-size: 15px;
+	}
+} */
