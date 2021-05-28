@@ -131,3 +131,88 @@ nav {
 	text-align: center;
 	background: rgb(20, 20, 24);
 }
+<<<<<<< Updated upstream
+=======
+/* @media screen and (max-width: 768px) {
+	h1 {
+		font-size: 15px;
+	}
+	h2 {
+		font-size: 15px;
+	}
+} */
+
+
+.container2{
+	position: relative;
+	width: 100%;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	
+	flex-direction: row;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+	flex-wrap: wrap;
+	display:flex;
+    
+	
+
+}
+
+.container2 .card {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	background-color: #fff;
+	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
+	transition: 0.3s ease-in-out;
+	box-sizing: border-box;
+	flex-wrap: wrap;
+	margin: 15px;
+
+	
+}
+
+.container2 .card:hover{
+	height: 420px;
+
+}
+
+.imgBx{
+	position: relative;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+img{
+	height: 100px;
+	width: 150px;
+
+}
+
+.container2 .card .imgBx img{
+	max-width: 100%;
+	border-radius: 4px;
+	 
+}
+
+.container2 .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	height: 100px;
+}
+.container2 .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: 40px;
+	transition-delay: 0.3s;
+}
+>>>>>>> Stashed changes
