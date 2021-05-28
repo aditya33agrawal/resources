@@ -5,7 +5,6 @@
 	color: #fff;
 	font-family: "Poppins", sans-serif;
 }
-
 .container {
 	height: 100vh;
 	background: rgb(22, 22, 24);
@@ -13,7 +12,6 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-
 .container h2 {
 	position: absolute;
 	top: 50%;
@@ -27,7 +25,6 @@
 	-webkit-text-stroke: 2px #fff;
 	white-space: nowrap;
 }
-
 nav {
 	position: absolute;
 	display: flex;
@@ -72,7 +69,7 @@ nav {
 	background-size: 200% auto;
 	color: white;
 	text-decoration: none;
-	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
+	/* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
 	/* box-shadow: 0 0 10px #eee; */
 	border-radius: 20px;
 	cursor: pointer;
@@ -87,7 +84,6 @@ nav {
 	background-position: right center;
 	color: #7303c0;
 	cursor: pointer;
-
 	letter-spacing: 10px; /* change the direction of the change here */
 }
 .btn-1 {
@@ -97,7 +93,6 @@ nav {
 		#7303c0 51%,
 		cyan 100%
 	);
-
 	position: absolute;
 }
 .main {
