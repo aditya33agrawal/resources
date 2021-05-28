@@ -7,8 +7,10 @@
 }
 .container {
 	height: 100vh;
-	background: rgb(22, 22, 24);
-	background-image: url("./components/shit.jpg");
+	background-color: #0cbaba;
+	/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
+
+	background-image: url("./components/bg.jpg");
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
@@ -16,14 +18,24 @@
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	letter-spacing: 10px;
 	transform: translate(-50%, -50%);
-	font-size: 7vw;
-	background: linear-gradient(to right, #ec38bc 0%, #7303c0 51%, cyan 100%);
+	font-size: 10vw;
+	font-family: "Odibee Sans", cursive;
+	color: #000;
+	text-shadow: 4px 5px rgb(134, 134, 139);
+	/* background: linear-gradient(to right, #ec38bc 0%, #7303c0 51%, cyan 100%);
 	background-clip: text;
 	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke: 2px #fff;
+	-webkit-text-fill-color: transparent; */
+	/* -webkit-text-stroke: 2px #fff; */
 	white-space: nowrap;
+}
+.down-arrow {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 nav {
 	position: absolute;
@@ -44,6 +56,7 @@ nav {
 .btn {
 	/* background-color: rgba(22, 22, 24, 0.75);
 	/* flex: 1 1 auto; */
+	font-family: "Odibee Sans", cursive;
 	padding: 10px;
 	text-align: center;
 	text-transform: uppercase;
@@ -51,15 +64,14 @@ nav {
 	/* margin: 0rem 7rem; */
 	background-size: 200% auto;
 	text-decoration: none;
-	font-size: 15px;
-	/* font-weight: bold; */
+	font-size: 25px;
+	font-weight: bold;
 	letter-spacing: 5px;
-	/* text-shadow: 0px 0px 10px rgba(0,0,0,0.2);*/
-	/* box-shadow: 0 0 10px #eee; */
 	border-radius: 10px;
-	color: black;
 }
 .btn-main {
+	font-family: "Odibee Sans", cursive;
+	font-size: 30px;
 	flex: 1 1 auto;
 	margin: 10px;
 	padding: 20px;
@@ -69,6 +81,7 @@ nav {
 	background-size: 200% auto;
 	color: white;
 	text-decoration: none;
+	font-weight: bold;
 	/* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
 	/* box-shadow: 0 0 10px #eee; */
 	border-radius: 20px;
@@ -82,17 +95,14 @@ nav {
 .btn-main:hover {
 	transition: 1.5s;
 	background-position: right center;
-	color: #7303c0;
+	/* color: #7303c0; */
 	cursor: pointer;
 	letter-spacing: 10px; /* change the direction of the change here */
 }
 .btn-1 {
-	background-image: linear-gradient(
-		to right,
-		#ec38bc 0%,
-		#7303c0 51%,
-		cyan 100%
-	);
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
 	position: absolute;
 }
 .main {
@@ -101,17 +111,86 @@ nav {
 	transform: translate(-50%, -50%);
 }
 .btn-2 {
-	border: 2px solid #7303c0;
-	color: #7303c0;
+	/* border: 2px solid #7303c0; */
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+	color: #fff;
 }
 .btn-2:hover {
-	background-image: linear-gradient(
-		to right,
-		#ec38bc 0%,
-		#7303c0 51%,
-		cyan 100%
-	);
-	color: #7303c0;
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+
+	/* color: #7303c0; */
+}
+
+/* @media screen and (max-width: 768px) {
+	h1 {
+		font-size: 15px;
+	}
+	h2 {
+		font-size: 15px;
+	}
+} */
+
+.container2 {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+	background-color: rgb(220, 214, 209);
+	flex-direction: row;
+	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+	flex-wrap: wrap;
+}
+
+.card {
+	position: relative;
+	width: 200px;
+	height: 250px;
+	border-radius: 20px;
+	background-color: lightcoral;
+	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+	box-sizing: border-box;
+	margin: 15px;
+}
+
+.card:hover {
+	height: 10rem;
+}
+
+.imgBx {
+	position: absolute;
+	z-index: 5;
+	max-width: 100%;
+	border-radius: 4px;
+}
+img {
+	height: 100px;
+	width: 150px;
+}
+
+.container2 .card .content {
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	height: 50px;
+}
+.container2 .card:hover .content {
+	visibility: visible;
+	opacity: 1;
+	margin-top: 40px;
+	transition-delay: 0.3s;
 }
 .footer {
 	position: relative;
@@ -126,88 +205,3 @@ nav {
 	text-align: center;
 	background: rgb(20, 20, 24);
 }
-<<<<<<< Updated upstream
-=======
-/* @media screen and (max-width: 768px) {
-	h1 {
-		font-size: 15px;
-	}
-	h2 {
-		font-size: 15px;
-	}
-} */
-
-
-.container2{
-	position: relative;
-	width: 100%;
-    display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	padding: 30px;
-	
-	flex-direction: row;
-	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-	transition: 0.3s ease-in-out;
-	flex-wrap: wrap;
-	display:flex;
-    
-	
-
-}
-
-.container2 .card {
-	position: relative;
-	width: 200px;
-	height: 250px;
-	background-color: #fff;
-	box-shadow: 0 5px 202px rgba(0,0,0,0.5);
-	transition: 0.3s ease-in-out;
-	box-sizing: border-box;
-	flex-wrap: wrap;
-	margin: 15px;
-
-	
-}
-
-.container2 .card:hover{
-	height: 420px;
-
-}
-
-.imgBx{
-	position: relative;
-	flex-wrap: wrap;
-	flex-direction: column;
-}
-img{
-	height: 100px;
-	width: 150px;
-
-}
-
-.container2 .card .imgBx img{
-	max-width: 100%;
-	border-radius: 4px;
-	 
-}
-
-.container2 .card .content{
-	position: relative;
-	margin-top: -140px;
-	padding: 10px 15px;
-	text-align: center;
-	color: #111;
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
-	height: 100px;
-}
-.container2 .card:hover .content{
-	visibility: visible;
-	opacity: 1;
-	margin-top: 40px;
-	transition-delay: 0.3s;
-}
->>>>>>> Stashed changes
