@@ -4,23 +4,29 @@
 	box-sizing: border-box;
 	color: #fff;
 	font-family: "Odibee Sans", cursive;
-	/* scroll-behavior: smooth; */
+	scroll-behavior: smooth;
 }
+
+body {
+
+	background-color: #0a2a43;
+}
+
 .landing {
 	height: 100vh;
-	background-color: #0cbaba;
-	/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
-
-	background-image: url("./components/bg.jpg");
+	/* background-color: #0cbaba;
+	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+	background-image: url("./components/bg.jpg"); */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.landing h2 {
-	position: absolute;
-	top: 50%;
+.main-title {
+	position: relative;
+	margin-top: 67%;
+	/* top: 50%;
 	left: 50%;
 	letter-spacing: 10px;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%); */
 	font-size: 10vw;
 	font-family: "Odibee Sans", cursive;
 	color: #000;
@@ -30,7 +36,8 @@
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent; */
 	/* -webkit-text-stroke: 2px #fff; */
-	white-space: nowrap;
+	/* white-space: nowrap; */
+	z-index: 2;
 }
 .down-arrow {
 	position: absolute;
@@ -38,6 +45,7 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
+	z-index: 3;
 }
 nav {
 	position: absolute;
@@ -45,6 +53,7 @@ nav {
 	padding: 1rem 1rem;
 	justify-content: space-between;
 	width: 100%;
+	z-index: 9;
 }
 .content {
 	width: 100%;
@@ -89,6 +98,7 @@ nav {
 	border-radius: 20px;
 	cursor: pointer;
 	letter-spacing: 5px;
+	z-index: 3;
 }
 .btn:hover {
 	transition: 1.5s;
@@ -223,4 +233,55 @@ nav {
 	color: white;
 	text-align: center;
 	background: rgb(20, 20, 24);
+}
+
+/* parallax */
+
+#sec {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#sec::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+	z-index: 1000;
+}
+/* #sec::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: #0a2a43;
+	z-index: 1000;
+	mix-blend-mode: color;
+} */
+
+#sec img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	pointer-events: none;
+}
+
+#road{
+	z-index: 3;
+}
+
+#mountain {
+	z-index: 1;
 }

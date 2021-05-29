@@ -27,18 +27,29 @@
 			/>
 			<h3>Getting there...</h3>
 		</div>
+
+		<nav>
+			<a class="btn btn-2" href="#">About</a>
+			<a class="btn btn-2" href="#">The Team</a>
+			<a class="btn btn-2" href="#">Contact us</a>
+			<a class="btn btn-2" href="#">Sign In/Sign Up</a>
+		</nav>
+
+<section id="sec">
+	<img src="components/assets/bg.jpg" id="bg">
+	<img src="components/assets/moon.png" id="moon">
+	<img src="components/assets/mountain.png" id="mountain">
+	<img src="components/assets/road.png" id="road">
+	<div class="landing">
+    <h2 class="main-title" id="main_title">(Re)Sources</h2>
+	<a class="btn-main btn-1 main" id="main_btn" href="index.html#container">Fuck Off!</a>
+    </div>
+</section>
+
 		<section>
-			<nav>
-				<a class="btn btn-2" href="#">About</a>
-				<a class="btn btn-2" href="#">The Team</a>
-				<a class="btn btn-2" href="#">Contact us</a>
-				<a class="btn btn-2" href="#">Sign In/Sign Up</a>
-			</nav>
-			<div class="landing">
-				<h2 class="main-title">(Re)Sources</h2>
-				<a class="btn-main btn-1 main" href="index.html#container">Fuck Off!</a>
-				<img src="./components/down-arrow.gif" class="down-arrow" alt="" />
-			</div>
+			<!-- <div class="landing">
+			<img src="./components/down-arrow.gif" class="down-arrow" alt="" />
+		    </div> -->
 			<div class="container" id="container">
 				<div class="card">
 					<div class="cardTop">
@@ -104,9 +115,27 @@
 		</section>
 
 		<div class="footer">
-			<p>Designed and developed by: Rhythm Bindal and Pratham Kumar. 2021</p>
+			<p>Designed and developed by: Rhythm Bindal, Aditya Agrawal and Pratham Kumar. 2021</p>
 		</div>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="./script.js"></script>
+
+		<script>
+			var bg = document.getElementById('bg');
+			var moon = document.getElementById('moon');
+			var mountain = document.getElementById('mountain');
+			var road = document.getElementById('road');
+			var main_title = document.getElementById('main_title');
+
+			window.addEventListener('scroll', function(){
+				var value = window.scrollY;
+
+				bg.style.top = value * 0.5 + 'px';
+				moon.style.left = -value * 0.5 + 'px';
+				mountain.style.top = -value * 0.15 + 'px';
+				road.style.top = value * 0.206 + 'px';
+				main_title.style.top = value * 0.5 + 'px';
+			})
+		</script>
 	</body>
 </html>
