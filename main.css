@@ -3,9 +3,10 @@
 	margin: 0;
 	box-sizing: border-box;
 	color: #fff;
-	font-family: "Poppins", sans-serif;
+	font-family: "Odibee Sans", cursive;
+	/* scroll-behavior: smooth; */
 }
-.container {
+.landing {
 	height: 100vh;
 	background-color: #0cbaba;
 	/* background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%); */
@@ -14,7 +15,7 @@
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.container h2 {
+.landing h2 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -36,6 +37,7 @@
 	top: 90%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	height: 150px;
 }
 nav {
 	position: absolute;
@@ -124,74 +126,91 @@ nav {
 	/* color: #7303c0; */
 }
 
-/* @media screen and (max-width: 768px) {
-	h1 {
-		font-size: 15px;
-	}
-	h2 {
-		font-size: 15px;
-	}
-} */
-
-.container2 {
-	position: relative;
-	width: 100%;
+.container {
+	height: 100vh;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
-	flex-wrap: wrap;
-	padding: 30px;
-	background-color: rgb(220, 214, 209);
-	flex-direction: row;
-	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-	transition: 0.3s ease-in-out;
-	flex-wrap: wrap;
 }
+/* Transistion both your normal and hovered elements to allow for smooth flow when unhovered */
 
 .card {
-	position: relative;
-	width: 200px;
-	height: 250px;
+	background: #111;
+	margin: 20px;
+	height: 500px;
+	width: 25%;
+	transition: 1s all ease;
 	border-radius: 20px;
-	background-color: lightcoral;
-	box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-	transition: 0.3s ease-in-out;
-	box-sizing: border-box;
-	margin: 15px;
 }
+
+/* I used background url to allow me to change the height and width without needing extra css */
+
+.cardTop {
+	transition: 0.4s all ease;
+	height: 65%;
+}
+.cardTop img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cardBottom {
+	height: 35%;
+	transition: 0.4s all ease;
+}
+
+.cardText {
+	min-height: 100%;
+	padding: 50px;
+	margin: 10px;
+	letter-spacing: 8px;
+}
+
+.cardTitle {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+.cardInfo {
+	padding-top: 10px;
+	font-size: 18px;
+	font-weight: 500;
+	color: orange;
+}
+
+/* Hidding the entire so anything we put in will only show on hover */
+
+.cardHoverText {
+	visibility: hidden;
+}
+
+/* Hover affects */
 
 .card:hover {
-	height: 10rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.imgBx {
-	position: absolute;
-	z-index: 5;
-	max-width: 100%;
-	border-radius: 4px;
-}
-img {
-	height: 100px;
-	width: 150px;
-}
+/* Using className + hover followed by child element allows you to change child elements when parent is hovered */
 
-.container2 .card .content {
-	position: relative;
-	margin-top: -140px;
-	padding: 10px 15px;
-	text-align: center;
-	color: #111;
-	visibility: hidden;
-	opacity: 0;
-	transition: 0.3s ease-in-out;
-	height: 50px;
-}
-.container2 .card:hover .content {
+.card:hover .cardHoverText {
 	visibility: visible;
-	opacity: 1;
-	margin-top: 40px;
+	transition: 0.5s all ease;
 	transition-delay: 0.3s;
+	margin: 50px;
 }
+
+.card:hover .cardBottom {
+	transition: 0.5s all ease;
+	height: 65%;
+	opacity: 1;
+}
+
+.card:hover .cardTop {
+	height: 35%;
+	opacity: 0.8;
+	transition: 0.5s all ease;
+}
+
 .footer {
 	position: relative;
 	left: 0;
