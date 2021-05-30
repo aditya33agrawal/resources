@@ -16,6 +16,7 @@
 			rel="stylesheet"
 		/>
 		<link rel="stylesheet" href="./main.css" />
+
 		<title>(Re)Sources</title>
 	</head>
 	<body>
@@ -27,7 +28,6 @@
 			/>
 			<h3>Getting there...</h3>
 		</div>
-
 		<nav>
 			<a class="btn btn-2" href="#">About</a>
 			<a class="btn btn-2" href="#">The Team</a>
@@ -35,21 +35,34 @@
 			<a class="btn btn-2" href="#">Sign In/Sign Up</a>
 		</nav>
 
-<section id="sec">
-	<img src="components/assets/bg.jpg" id="bg">
-	<img src="components/assets/moon.png" id="moon">
-	<img src="components/assets/mountain.png" id="mountain">
-	<img src="components/assets/road.png" id="road">
-	<div class="landing">
-    <h2 class="main-title" id="main_title">(Re)Sources</h2>
-	<a class="btn-main btn-1 main" id="main_btn" href="index.html#container">Fuck Off!</a>
-    </div>
-</section>
+		<section id="sec">
+			<img src="components/assets/bg.jpg" id="bg" />
+			<img src="components/assets/moon.png" id="moon" />
+			<img src="components/assets/mountain.png" id="mountain" />
+			<img src="components/assets/road.png" id="road" />
+			<div class="landing">
+				<h2 class="main-title" id="main_title">(Re)Sources</h2>
+				<a class="btn-main btn-1 main" id="main_btn" href="index.html#about"
+					>Fuck Off!</a
+				>
+			</div>
+		</section>
 
 		<section>
-			<!-- <div class="landing">
-			<img src="./components/down-arrow.gif" class="down-arrow" alt="" />
-		    </div> -->
+			<div class="about" id="about">
+				<h2 class="about-heading">About The Page</h2>
+				<p class="about-text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint,
+					assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Amet possimus, odit nam ipsum, numquam est quod fugit voluptas
+					incidunt modi consectetur at optio atque harum impedit officiis.
+					Adipisci corporis, obcaecati totam architecto eius qui ut nulla
+					reiciendis facere et. Exercitationem, eveniet non voluptate laboriosam
+					magnam molestias veritatis nihil adipisci minus!
+				</p>
+
+				<img src="./components/down-arrow.gif" class="down-arrow" alt="" />
+			</div>
 			<div class="container" id="container">
 				<div class="card">
 					<div class="cardTop">
@@ -115,27 +128,13 @@
 		</section>
 
 		<div class="footer">
-			<p>Designed and developed by: Rhythm Bindal, Aditya Agrawal and Pratham Kumar. 2021</p>
+			<p>
+				Designed and developed by: Rhythm Bindal, Aditya Agrawal and Pratham
+				Kumar. 2021
+			</p>
 		</div>
+		<script src="scrollify.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 		<script src="./script.js"></script>
-
-		<script>
-			var bg = document.getElementById('bg');
-			var moon = document.getElementById('moon');
-			var mountain = document.getElementById('mountain');
-			var road = document.getElementById('road');
-			var main_title = document.getElementById('main_title');
-
-			window.addEventListener('scroll', function(){
-				var value = window.scrollY;
-
-				bg.style.top = value * 0.5 + 'px';
-				moon.style.left = -value * 0.5 + 'px';
-				mountain.style.top = -value * 0.15 + 'px';
-				road.style.top = value * 0.206 + 'px';
-				main_title.style.top = value * 0.5 + 'px';
-			})
-		</script>
 	</body>
 </html>

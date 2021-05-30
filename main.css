@@ -8,40 +8,30 @@
 }
 
 body {
-
 	background-color: #0a2a43;
 }
 
 .landing {
 	height: 100vh;
-	/* background-color: #0cbaba;
-	background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
-	background-image: url("./components/bg.jpg"); */
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
 .main-title {
 	position: relative;
-	margin-top: 67%;
-	/* top: 50%;
+	margin-top: 57%;
+	top: 20%;
 	left: 50%;
 	letter-spacing: 10px;
-	transform: translate(-50%, -50%); */
+	transform: translate(-50%, -50%);
 	font-size: 10vw;
 	font-family: "Odibee Sans", cursive;
-	color: #000;
-	text-shadow: 4px 5px rgb(134, 134, 139);
-	/* background: linear-gradient(to right, #ec38bc 0%, #7303c0 51%, cyan 100%);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent; */
-	/* -webkit-text-stroke: 2px #fff; */
-	/* white-space: nowrap; */
+	color: #0a2a43;
+	text-shadow: 4px 5px #2989d2;
 	z-index: 2;
 }
 .down-arrow {
 	position: absolute;
-	top: 90%;
+	top: 180%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
@@ -55,10 +45,24 @@ nav {
 	width: 100%;
 	z-index: 9;
 }
+.about {
+	height: 100vh;
+	width: 100%;
+	margin: 20px;
+	padding: 20px;
+	text-align: center;
+}
+.about-heading {
+	font-size: 100px;
+	padding: 20px;
+}
+.about-text {
+	font-size: 50px;
+}
 .content {
 	width: 100%;
 	background: rgb(20, 20, 24);
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	z-index: 2;
 	padding: 5rem 10rem;
 	text-align: center;
@@ -114,11 +118,10 @@ nav {
 .btn-1 {
 	background-color: #eec0c6;
 	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
-
 	position: absolute;
 }
 .main {
-	top: 70%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
@@ -247,13 +250,13 @@ nav {
 	align-items: center;
 }
 
-#sec::before{
-	content: '';
+#sec::before {
+	content: "";
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	height: 100px;
-    background: linear-gradient(to top, #0a2a43, transparent);
+	background: linear-gradient(to top, #0a2a43, transparent);
 	z-index: 1000;
 }
 /* #sec::after{
@@ -278,7 +281,7 @@ nav {
 	pointer-events: none;
 }
 
-#road{
+#road {
 	z-index: 3;
 }
 

@@ -39,3 +39,20 @@ $('a[href*="#"]')
       }
     }
   });
+
+  // Parallax
+  var bg = document.getElementById("bg");
+			var moon = document.getElementById("moon");
+			var mountain = document.getElementById("mountain");
+			var road = document.getElementById("road");
+			var main_title = document.getElementById("main_title");
+
+			window.addEventListener("scroll", function () {
+				var value = window.scrollY;
+
+				bg.style.top = value * 0.5 + "px";
+				moon.style.left = -value * 0.5 + "px";
+				mountain.style.top = -value * 0.15 + "px";
+				road.style.top = value * 0.206 + "px";
+				main_title.style.top = value * 0.5 + "px";
+			});
