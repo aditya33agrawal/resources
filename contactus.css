@@ -1,0 +1,42 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-image: url(./components/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+} 
+.contactus{
+   display: block;
+   margin-top: 20%;
+   margin-left: 5%;
+   font-family: 'VT323', monospace;
+   font-size: 4em;
+   text-shadow: 2px 2px #eef1f5;
+   animation: contactus 1s ease-in 1 forwards ;
+}
+@keyframes contactus{
+    from{
+        margin-left: -50%;
+
+    }
+    to{
+        margin-left: 5%;
+    }
+}
+p{
+    font-family: 'VT323', monospace;
+    display: block;
+    margin-left: 5%;
+    font-size: 2em;
+    animation: p 1s ease-in 1 1s forwards ;
+}
+@keyframes p{
+    from{
+        margin-left: -50%;
+
+    }
+    to{
+        margin-left: 5%;
+    }
+}
