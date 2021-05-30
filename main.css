@@ -10,6 +10,15 @@
 body {
 	background-color: #0a2a43;
 }
+/* .scroll-container {
+	height: 100vh;
+	overflow-y: scroll;
+	scroll-snap-type: y mandatory;
+}
+section {
+	height: 100vh;
+	scroll-snap-align: center;
+} */
 
 .landing {
 	height: 100vh;
@@ -47,9 +56,8 @@ nav {
 }
 .about {
 	height: 100vh;
-	width: 100%;
 	margin: 20px;
-	padding: 20px;
+	padding: 10rem 2rem;
 	text-align: center;
 }
 .about-heading {
@@ -109,7 +117,7 @@ nav {
 	background-position: right center; /* change the direction of the change here */
 }
 .btn-main:hover {
-	transition: 1.5s;
+	transition: 0.5s;
 	background-position: right center;
 	/* color: #7303c0; */
 	cursor: pointer;
@@ -224,20 +232,6 @@ nav {
 	transition: 0.5s all ease;
 }
 
-.footer {
-	position: relative;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	padding: 7px;
-	font-family: "cardo";
-	letter-spacing: 2px;
-	font-size: 10px;
-	color: white;
-	text-align: center;
-	background: rgb(20, 20, 24);
-}
-
 /* parallax */
 
 #sec {
@@ -287,4 +281,26 @@ nav {
 
 #mountain {
 	z-index: 1;
+}
+@media screen and (max-width: 768px) {
+	.container {
+		height: 100vh;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-direction: column;
+	}
+}
+.footer {
+	position: relative;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	padding: 7px;
+	font-family: "cardo";
+	letter-spacing: 2px;
+	font-size: 10px;
+	color: white;
+	text-align: center;
+	background: rgb(20, 20, 24);
 }
