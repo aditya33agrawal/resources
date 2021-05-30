@@ -2,7 +2,7 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-	font-family: "Odibee Sans", cursive;
+	/* font-family: "Odibee Sans", cursive; */
 	scroll-behavior: smooth;
 }
 body {
@@ -22,10 +22,12 @@ section {
 	border-radius: 5px;
 }
 .heading h1 {
-	color: #081e2f;
+	color: #8eb9da;
 	font-size: 90px;
-	letter-spacing: 30px;
+	font-family: 'VT323', monospace;
+	letter-spacing: 13px;
 	text-transform: uppercase;
+	text-shadow: 2px 2px #fff;
 }
 /* body::before {
 	content: "";
@@ -56,6 +58,7 @@ section {
 	align-items: center;
 	flex-wrap: wrap;
 	margin: 40px 0;
+	font-family: "Odibee Sans", cursive;
 }
 .container .card {
 	position: relative;
