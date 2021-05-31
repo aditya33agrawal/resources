@@ -22,13 +22,9 @@ section {
 	border-radius: 5px;
 }
 .heading h1 {
-<<<<<<< HEAD
-	color: rgb(129, 127, 127);
-=======
 	color: #8eb9da;
->>>>>>> 33d6a02fe414aebc3f8c7f718947d3936d9b16b2
 	font-size: 90px;
-	font-family: 'VT323', monospace;
+	font-family: "VT323", monospace;
 	letter-spacing: 13px;
 	text-transform: uppercase;
 	text-shadow: 2px 2px #fff;
