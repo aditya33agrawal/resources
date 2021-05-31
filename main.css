@@ -34,7 +34,7 @@ section {
 	transform: translate(-50%, -50%);
 	font-size: 10vw;
 	font-family: "Odibee Sans", cursive;
-	color: #0a2a43;
+	color: #c7dae9;
 	text-shadow: 4px 5px #2989d2;
 	z-index: 2;
 }
@@ -49,8 +49,10 @@ section {
 nav {
 	position: absolute;
 	display: flex;
+	word-spacing: 3pxpx;
+
 	padding: 1rem 1rem;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	z-index: 9;
 }
@@ -61,11 +63,14 @@ nav {
 	text-align: center;
 }
 .about-heading {
-	font-size: 100px;
+	font-size: 70px;
 	padding: 20px;
+	font-family: 'VT323', monospace;
+	letter-spacing: 4px;
 }
 .about-text {
-	font-size: 50px;
+	font-size: 25px;
+	font-family: 'PT Sans', sans-serif;
 }
 .content {
 	width: 100%;
@@ -87,22 +92,22 @@ nav {
 	/* margin: 0rem 7rem; */
 	background-size: 200% auto;
 	text-decoration: none;
-	font-size: 25px;
+	font-size: 20px;
 	font-weight: bold;
-	letter-spacing: 5px;
+	letter-spacing: 3px;
 	border-radius: 10px;
 }
 .btn-main {
 	font-family: "Odibee Sans", cursive;
-	font-size: 30px;
+	font-size: 21px;
 	flex: 1 1 auto;
 	margin: 10px;
-	padding: 20px;
+	padding: 11px;
 	text-align: center;
 	text-transform: uppercase;
 	transition: 1s;
 	background-size: 200% auto;
-	color: white;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
 	font-weight: bold;
 	/* text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); */
@@ -125,24 +130,26 @@ nav {
 }
 .btn-1 {
 	background-color: #eec0c6;
-	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
 	position: absolute;
 }
 .main {
-	top: 80%;
+	top: 85%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
 .btn-2 {
 	/* border: 2px solid #7303c0; */
-	background-color: #eec0c6;
-	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+	
+
+	background-color: none;
+	/* background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%); */
 
 	color: #fff;
 }
 .btn-2:hover {
 	background-color: #eec0c6;
-	background-image: linear-gradient(315deg, #eec0c6 0%, #7ee8fa 74%);
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
 
 	/* color: #7303c0; */
 }
@@ -182,19 +189,19 @@ nav {
 
 .cardText {
 	min-height: 100%;
-	padding: 50px;
+	padding: 30px;
 	margin: 10px;
 	letter-spacing: 8px;
 }
 
 .cardTitle {
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 700;
 }
 
 .cardInfo {
 	padding-top: 10px;
-	font-size: 18px;
+	font-size: 1rem;
 	font-weight: 500;
 	color: orange;
 }
