@@ -49,7 +49,7 @@ section {
 nav {
 	position: absolute;
 	display: flex;
-	word-spacing: 3pxpx;
+	word-spacing: 3px;
 
 	padding: 1rem 1rem;
 	justify-content: center;
@@ -65,12 +65,12 @@ nav {
 .about-heading {
 	font-size: 70px;
 	padding: 20px;
-	font-family: 'VT323', monospace;
+	font-family: "VT323", monospace;
 	letter-spacing: 4px;
 }
 .about-text {
 	font-size: 25px;
-	font-family: 'PT Sans', sans-serif;
+	font-family: "PT Sans", sans-serif;
 }
 .content {
 	width: 100%;
@@ -140,14 +140,12 @@ nav {
 }
 .btn-2 {
 	/* border: 2px solid #7303c0; */
-	
-
 	background-color: none;
 	/* background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%); */
-
 	color: #fff;
 }
 .btn-2:hover {
+	transition: 1s;
 	background-color: #eec0c6;
 	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
 
