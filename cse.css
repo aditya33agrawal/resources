@@ -1,0 +1,115 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Odibee Sans", cursive;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #0a2a43;
+}
+/* section {
+	margin: 50px;
+} */
+h1 {
+	font-size: 30px;
+	color: #fff;
+	font-family: "VT323", monospace;
+	text-transform: uppercase;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 15px;
+}
+table {
+	width: 100%;
+	table-layout: fixed;
+}
+.container {
+	position: fixed;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.tbl-header {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+.tbl-content {
+	height: 300px;
+	overflow-x: auto;
+	margin-top: 0px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+}
+th {
+	padding: 20px 15px;
+	text-align: center;
+	font-weight: 500;
+	font-size: 24px;
+	color: #fff;
+	text-transform: uppercase;
+}
+td {
+	padding: 15px;
+	text-align: center;
+	vertical-align: middle;
+	font-weight: 300;
+	font-size: 24px;
+	color: #fff;
+	border-bottom: solid 1px rgba(255, 255, 255, 0.1);
+}
+
+/* for custom scrollbar for webkit browser*/
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+::-webkit-scrollbar-thumb {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+/*Button styles*/
+.btn {
+	/* background-color: rgba(22, 22, 24, 0.75);
+	/* flex: 1 1 auto; */
+	font-family: "Odibee Sans", cursive;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 1s;
+	/* margin: 0rem 7rem; */
+	background-size: 200% auto;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	border-radius: 10px;
+}
+
+.btn:hover {
+	transition: 1.5s;
+	background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
+	position: absolute;
+}
+
+.btn-2 {
+	/* border: 2px solid #7303c0; */
+	background-color: none;
+	/* background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%); */
+	color: #fff;
+}
+.btn-2:hover {
+	transition: 1s;
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
+
+	/* color: #7303c0; */
+}
