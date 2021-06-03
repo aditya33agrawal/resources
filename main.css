@@ -165,7 +165,7 @@ nav {
 	margin: 20px;
 	height: 500px;
 	width: 25%;
-	transition: 1s all ease;
+	/* transition: 1s all ease; */
 	border-radius: 20px;
 }
 
@@ -181,7 +181,7 @@ nav {
 	object-fit: cover;
 }
 .cardBottom {
-	height: 35%;
+	height: 45%;
 	transition: 0.4s all ease;
 }
 
@@ -220,14 +220,14 @@ nav {
 
 .card:hover .cardHoverText {
 	visibility: visible;
-	transition: 0.5s all ease;
-	transition-delay: 0.3s;
-	margin: 50px;
+	/* transition: 0.5s all ease; */
+	/* transition-delay: 0.3s; */
+	margin: 30px;
 }
 
 .card:hover .cardBottom {
 	transition: 0.5s all ease;
-	height: 65%;
+	height: 60%;
 	opacity: 1;
 }
 
