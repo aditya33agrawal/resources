@@ -19,6 +19,14 @@ We have only one aim: Education must be free and available to all.
 ## Contributing
 We are constantly trying to add on more data and provide more study material to our fellow students.
 Contribute your own resources by following this:
+* Fork this repository and clone it on your device
+* Find any free and open to use content
+* Copy it's link
+* Add it to the table inside which it suits. For eg.- If the content is related to Data Science, add it in the dse.html file.
+* Write a proper commit message, describing the content you added with the section in which you added it.
+* Create a pull request
+* If we find the content relevant and up to mark with our terms we'll merge your contribution.
+* We're working on creating an automated link adding system, if you can do so, please message any of the creators(Contact link is given in the [Contact](#Contact) section)
 
 ## Future Prospects
 We plan to add as many effective course materials as we can. As soon as we find better materials those will be added here.
