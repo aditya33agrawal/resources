@@ -1,0 +1,96 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	color: #fff;
+	font-family: "Odibee Sans", cursive;
+	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #0a2a43;
+}
+
+.container {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* Transistion both your normal and hovered elements to allow for smooth flow when unhovered */
+
+.card {
+	background: #111;
+	margin: 20px;
+	height: 500px;
+	width: 50%;
+	border-radius: 20px;
+}
+
+/* I used background url to allow me to change the height and width without needing extra css */
+
+.cardTop {
+	transition: 0.4s all ease;
+	height: 65%;
+}
+.cardTop img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.cardBottom {
+	height: 45%;
+	transition: 0.4s all ease;
+}
+
+.cardText {
+	min-height: 100%;
+	padding: 30px;
+	margin: 10px;
+	letter-spacing: 8px;
+}
+
+.cardTitle {
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.cardInfo {
+	padding-top: 10px;
+	font-size: 1rem;
+	font-weight: 500;
+	color: orange;
+}
+
+/* Hidding the entire so anything we put in will only show on hover */
+
+.cardHoverText {
+	visibility: hidden;
+}
+
+/* Hover affects */
+
+.card:hover {
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Using className + hover followed by child element allows you to change child elements when parent is hovered */
+
+.card:hover .cardHoverText {
+	visibility: visible;
+	/* transition: 0.5s all ease; */
+	/* transition-delay: 0.3s; */
+	margin: 30px;
+}
+
+.card:hover .cardBottom {
+	transition: 0.5s all ease;
+	height: 60%;
+	opacity: 1;
+}
+
+.card:hover .cardTop {
+	height: 35%;
+	opacity: 0.8;
+	transition: 0.5s all ease;
+}
