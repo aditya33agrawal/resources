@@ -1,4 +1,4 @@
-<h1 align="center">(Re)Source</h1>
+<h1 align="center">[Re]Sources</h1>
 <p align="center"><em>Providing you the resources you need to excel in engineering</em></p>
 
 ## Table of Content
