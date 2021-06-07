@@ -10,18 +10,68 @@
 body {
 	background-color: #0a2a43;
 }
+/* Dropdown Button */
+.dropbtn {
+	background-color: #04aa6d;
+	color: white;
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	transition: 1s all ease-in;
+	border-radius: 20px;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	left: 90%;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	visibility: hidden;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	/* display: block; */
+	visibility: visible;
+	transition: 1s all ease-in;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
 
 .container {
-	position: fixed;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 /* Transistion both your normal and hovered elements to allow for smooth flow when unhovered */
 
 .card {
 	background: #111;
-	margin: 20px;
+	margin: 10px;
 	height: 500px;
 	width: 50%;
 	border-radius: 20px;
@@ -37,6 +87,8 @@ body {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
 }
 .cardBottom {
 	height: 45%;
@@ -78,19 +130,62 @@ body {
 
 .card:hover .cardHoverText {
 	visibility: visible;
-	/* transition: 0.5s all ease; */
-	/* transition-delay: 0.3s; */
-	margin: 30px;
+	transition: 0.5s all ease;
+	transition-delay: 0.2s;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px;
 }
 
 .card:hover .cardBottom {
 	transition: 0.5s all ease;
-	height: 60%;
+	height: 80%;
 	opacity: 1;
 }
-
 .card:hover .cardTop {
-	height: 35%;
+	height: 45%;
 	opacity: 0.8;
+	transition: 0.5s all ease-in;
+}
+.btn {
+	visibility: hidden;
+	font-family: "Odibee Sans", cursive;
+	padding: 5px;
+	text-align: center;
+	text-transform: uppercase;
 	transition: 0.5s all ease;
+	background-size: 200% auto;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 3px;
+	border-radius: 10px;
+}
+.card:hover .btn {
+	visibility: visible;
+}
+.btn:hover {
+	transition: 0.2s all ease-in-out;
+	background-position: right center; /* change the direction of the change here */
+}
+
+.btn-1 {
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
+	position: absolute;
+}
+
+.btn-2 {
+	/* border: 2px solid #7303c0; */
+	background-color: none;
+	/* background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%); */
+	color: #fff;
+}
+.btn-2:hover {
+	transition: 1s;
+	background-color: #eec0c6;
+	background-image: linear-gradient(315deg, #eec0c6 0%, orange 74%);
+
+	/* color: #7303c0; */
 }
