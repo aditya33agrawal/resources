@@ -7,6 +7,11 @@
 		<link rel="stylesheet" href="./preloader.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
 			rel="stylesheet"
 		/>
@@ -94,21 +99,21 @@
 			</div>
 		</section>
 		<section>
-			<div class="container" id="container">
+			<!--	<div class="container" id="container">
 				<div class="card">
 					<div class="cardTop">
 						<img src="./components/typewriter.jpeg" alt="" srcset="" />
 					</div>
 					<div class="cardBottom">
 						<div class="cardText">
-							<!--       Title and description will always show -->
+
 							<h3 class="cardTitle">Computer Science</h3>
 							<h4 class="cardInfo">Short Description</h4>
-							<!--       Only visibile when parent element is hovered over -->
+
 							<div class="cardHoverText">
 								<a class="btn btn-2" href="#">About</a>
 							</div>
-							<!--       Only visibile when parent element is hovered over -->
+
 						</div>
 					</div>
 				</div>
@@ -118,14 +123,14 @@
 					</div>
 					<div class="cardBottom">
 						<div class="cardText">
-							<!--       Title and description will always show -->
+
 							<h3 class="cardTitle">Computer & Cummunications</h3>
 							<h4 class="cardInfo">Short Description</h4>
-							<!--       Only visibile when parent element is hovered over -->
+
 							<div class="cardHoverText">
 								<a class="btn btn-2" href="#">About</a>
 							</div>
-							<!--       Only visibile when parent element is hovered over -->
+
 						</div>
 					</div>
 				</div>
@@ -135,14 +140,14 @@
 					</div>
 					<div class="cardBottom">
 						<div class="cardText">
-							<!--       Title and description will always show -->
+
 							<h3 class="cardTitle">Information Technology</h3>
 							<h4 class="cardInfo">Short Description</h4>
-							<!--       Only visibile when parent element is hovered over -->
+
 							<div class="cardHoverText">
 								<a class="btn btn-2" href="#">About</a>
 							</div>
-							<!--       Only visibile when parent element is hovered over -->
+
 						</div>
 					</div>
 				</div>
@@ -152,19 +157,105 @@
 					</div>
 					<div class="cardBottom">
 						<div class="cardText">
-							<!--       Title and description will always show -->
+
 							<h3 class="cardTitle">Data Science</h3>
 							<h4 class="cardInfo">Short Description</h4>
-							<!--       Only visibile when parent element is hovered over -->
+
 							<div class="cardHoverText">
 								<a class="btn btn-2" href="#">About</a>
 							</div>
-							<!--       Only visibile when parent element is hovered over -->
+
 						</div>
 					</div>
 				</div>
-			</div>
+			</div> -->
+			<div class="introcontainer">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card ong">
+									<img src="./components/retro1.jpeg" />
+									<div class="text"></div>
+									<div class="title-box">
+										<h1>Computer Science and Eningeering</h1>
+										<p>
+											The future of the creative industry starts here, by
+											Creatives, for Creatives.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card two">
+									<img src="./components/retro2.jpeg" alt="" />
+									<div class="text"></div>
+									<div class="title-box">
+										<h1>Information Technology</h1>
+										<p>
+											Learn, grow, and develop your skills -- Access tools that
+											accelerate your career and build your audience.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card three">
+									<img src="./components/typewriter.jpeg" alt="" />
+									<div class="text"></div>
 
+									<div class="title-box">
+										<h1>Data Science</h1>
+										<p>
+											Share, distribute, and promote your artwork. We showcase
+											and highlight creativity, helping you find and connect
+											with clients and your fans.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card four">
+									<img src="./components/retro3.jpeg" alt="" />
+									<div class="text"></div>
+
+									<div class="title-box">
+										<h1>Computer and Communication Technology</h1>
+										<p>
+											We design your digital presence and collaborate to develop
+											your ideas into engaging, interactive, art and visual
+											experiences that keep you in control and in the spotlight.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-arrows">
+						<div class="swiper-button-prev"><span></span></div>
+						<div class="swiper-button-next"><span></span></div>
+					</div>
+
+					<!-- If we need scrollbar -->
+				</div>
+			</div>
 			<div class="footer">
 				<p>
 					Designed and developed by: Rhythm Bindal, Pratham Kumar, Aditya
