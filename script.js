@@ -56,3 +56,23 @@ $('a[href*="#"]')
 				road.style.top = value * 0.206 + "px";
 				main_title.style.top = value * 0.5 + "px";
 			});
+
+      const swiper = new Swiper(".swiper-container", {
+				speed: 500,
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+				centeredSlides: true,
+				paginationClickable: true,
+				watchSlidesProgress: true,
+				loop: true,
+				slidesPerView: 2,
+				spaceBetween: 30,
+				navigation: {
+					nextEl: ".swiper-button-next",
+					prevEl: ".swiper-button-prev",
+				},
+			});
+      var slideIndex = 0;
+showSlides();
