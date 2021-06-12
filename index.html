@@ -48,7 +48,8 @@
 			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/glitch.css" />
 
 		<title>(Re)Sources</title>
 	</head>
@@ -61,26 +62,48 @@
 			/>
 			<h3>Getting there...</h3>
 		</div>
-		<nav>
-			<a class="btn btn-2" href="#">About</a>
-			<a class="btn btn-2">|</a>
-			<a class="btn btn-2" href="./team.html">The Team</a>
-			<a class="btn btn-2">|</a>
-			<a class="btn btn-2" href="./ContactUs.html">Contact us</a>
-			<a class="btn btn-2">|</a>
-			<a class="btn btn-2" href="./components/under.jpg">Sign In/Sign Up</a>
-		</nav>
+		<div class="nav">
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="About">
+					<a href="./html/#">About</a>
+				</h2>
+			</div>
+
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Team">
+					<a href="./html/team.html">Team</a>
+				</h2>
+			</div>
+
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Contact Us">
+					<a href="./html/ContactUs.html">Contact Us</a>
+				</h2>
+			</div>
+
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Sign In/Up">
+					<a href="#">Sign In/Up</a>
+				</h2>
+			</div>
+		</div>
 		<section>
 			<section id="sec">
-				<img src="components/assets/bg.jpg" id="bg" />
+				<!-- <img src="components/assets/bg.jpg" id="bg" />
 				<img src="components/assets/moon.png" id="moon" />
 				<img src="components/assets/mountain.png" id="mountain" />
-				<img src="components/assets/road.png" id="road" />
+				<img src="components/assets/road.png" id="road" /> -->
+				<img src="./components/MOSHED-2021-6-12-2-51-55.gif" alt="background" />
 				<div class="landing">
-					<h2 class="main-title" id="main_title">(Re)Sources</h2>
-					<a class="btn-main btn-1 main" id="main_btn" href="index.html#about"
+					<!-- <h2 class="main-title" id="main_title">(Re)Sources</h2> -->
+					<!-- <a class="btn-main btn-1 main" id="main_btn" href="index.html#about"
 						>Get Started!</a
-					>
+					> -->
+					<!-- <div class="center">
+						<h2 class="center-text glitch is-glitching" data-text="Get Started">
+							<a href="index.html#about">Get Started!</a>
+						</h2>
+					</div> -->
 				</div>
 			</section>
 		</section>
@@ -98,7 +121,7 @@
 				</p>
 			</div>
 		</section>
-		<section>
+		<section id="swiper">
 			<!--	<div class="container" id="container">
 				<div class="card">
 					<div class="cardTop">
@@ -169,7 +192,7 @@
 					</div>
 				</div>
 			</div> -->
-			<div class="introcontainer">
+			<div class="introcontainer" id="intro-container">
 				<!-- Slider main container -->
 				<div class="swiper-container">
 					<!-- Additional required wrapper -->
