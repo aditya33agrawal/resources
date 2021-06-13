@@ -1,42 +1,31 @@
-body{
-    margin: 0%;
-    padding: 0%;
-    background-image: url(./components/top-view-chat-bubbles-with-telephone-receiver-copy-space.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-} 
-.contactus{
-   display: block;
-   margin-top: 20%;
-   margin-left: 5%;
-   font-family: 'VT323', monospace;
-   font-size: 4em;
-   text-shadow: 2px 2px #eef1f5;
-   animation: contactus 1s ease-in 1 forwards ;
+body {
+	margin: 0%;
+	padding: 0%;
+	background-image: url("../components/bg-glitch.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #fff;
 }
-@keyframes contactus{
-    from{
-        margin-left: -50%;
-
-    }
-    to{
-        margin-left: 5%;
-    }
+.contactus {
+	display: block;
+	margin-top: 20%;
+	margin-left: 5%;
+	font-family: "VT323", monospace;
+	font-size: 4em;
+	text-shadow: 2px 2px #eef1f5;
 }
-p{
-    font-family: 'VT323', monospace;
-    display: block;
-    margin-left: 5%;
-    font-size: 2em;
-    animation: p 1s ease-in 1 0.2s forwards ;
+p {
+	font-family: "VT323", monospace;
+	display: block;
+	margin-left: 5%;
+	font-size: 2em;
+	animation: 1s ease-in;
 }
-@keyframes p{
-    from{
-        margin-left: -50%;
-
-    }
-    to{
-        margin-left: 5%;
-    }
+@keyframes p {
+	from {
+		margin-left: -50%;
+	}
+	to {
+		margin-left: 5%;
+	}
 }

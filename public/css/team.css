@@ -11,6 +11,9 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	background: linear-gradient(#0a2a43 80%, #1c6faf);
+	background-image: url("../components/bg-glitch.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
 	min-height: 100vh;
 }
 section {
@@ -149,5 +152,5 @@ section {
 	font-size: 10px;
 	color: white;
 	text-align: center;
-	background: rgb(20, 20, 24);
+	/* background: rgb(20, 20, 24); */
 }

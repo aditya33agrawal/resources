@@ -11,16 +11,6 @@
 body {
 	background-color: rgba(75, 90, 90);
 }
-/* .scroll-container {
-	height: 100vh;
-	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
-}
-section {
-	height: 100vh;
-	scroll-snap-align: center;
-} */
-
 #sec {
 	position: relative;
 	width: 100%;
@@ -40,18 +30,6 @@ section {
 	background: linear-gradient(to top, rgb(75, 90, 90), transparent);
 	z-index: 1000;
 }
-/* #sec::after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-    background: #0a2a43;
-	z-index: 1000;
-	mix-blend-mode: color;
-} */
-
 #sec img {
 	position: absolute;
 	top: 0;
@@ -83,6 +61,10 @@ section {
 }
 .nav-content {
 	padding: 20px;
+}
+.blur {
+	filter: blur(1px);
+	-webkit-filter: blur(1px);
 }
 .center {
 	position: absolute;
@@ -155,8 +137,10 @@ nav {
 	letter-spacing: 4px;
 }
 .about-text {
-	font-size: 25px;
-	font-family: "PT Sans", sans-serif;
+	font-size: 35px;
+	font-family: "Odibee Sans", sans-serif;
+	padding: 10px;
+	letter-spacing: 3px;
 }
 .content {
 	width: 100%;
@@ -336,7 +320,7 @@ nav {
 	font-size: 10px;
 	color: white;
 	text-align: center;
-	background: rgb(20, 20, 24);
+	/* background: rgb(20, 20, 24); */
 }
 
 /*Slideer*/
