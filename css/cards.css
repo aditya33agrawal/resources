@@ -11,117 +11,11 @@ body {
 	align-items: center;
 	flex-wrap: wrap;
 	background: #0a2a43;
-	max-height: 50vh;
+	max-height: 100vh;
 	overflow: hidden;
 }
-section {
-	position: relative;
-}
-a {
-	text-decoration: none;
-	color: #000000;
-}
-
-a:hover {
-	color: #222222;
-}
-
-/* Dropdown */
-
-/* .dropdowndiv {
-	position: absolute;
-	left: 85%;
-	top: 15%;
-	z-index: 3;
-	font-family: "VT323", monospace;
-	font-size: 20px;
-}
-
-.dd-button {
-	display: inline-block;
-	border: 1px solid #fff;
-	color: #fff;
-	border-radius: 15px;
-	padding: 10px 30px 10px 20px;
-	background-color: rgba(255, 255, 255, 0.05);
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-	cursor: pointer;
-	white-space: nowrap;
-} */
-
-.dd-button:after {
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 15px;
-	transform: translateY(-50%);
-	width: 0;
-	height: 0;
-	border-left: 5px solid transparent;
-	border-right: 5px solid transparent;
-	border-top: 5px solid #fff;
-}
-
-.dd-button:hover {
-	background-color: #e91e63;
-	width: 115px;
-}
-
-.dd-input {
-	display: none;
-}
-
-.dd-menu {
-	position: absolute;
-	top: 100%;
-	border: 1px solid #fff;
-	color: #fff;
-	border-radius: 15px;
-	width: 115px;
-	/* padding: 10px 30px 10px 20px; */
-	/* margin: 2px 0 0 0; */
-	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
-	background-color: #0a2a43;
-	list-style-type: none;
-}
-
-.dd-input + .dd-menu {
-	display: none;
-}
-
-.dd-input:checked + .dd-menu {
-	display: block;
-}
-
-.dd-menu li {
-	padding: 10px 20px;
-	cursor: pointer;
-	white-space: nowrap;
-	width: 115px;
-	text-align: center;
-}
-
-.dd-menu li:hover {
-	background-color: #e91e63;
-	border-radius: 15px;
-	width: 115px;
-}
-
-.dd-menu li a {
-	display: block;
-	margin: -10px -20px;
-	padding: 10px 20px;
-}
-
-.dd-menu li.divider {
-	padding: 0;
-	border-bottom: 1px solid #cccccc;
-}
 .heading {
-	text-align: center;
-	/* border: 4px solid #041420; */
-	border-radius: 5px;
-   margin-bottom: 10%;
+	padding: 20px;
 }
 .heading h1 {
 	color: #8eb9da;
@@ -131,107 +25,16 @@ a:hover {
 	text-transform: uppercase;
 	text-shadow: 2px 2px #fff;
 }
-/* .card::before {
-	content: "";
+.container {
 	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(#f00, #f0f);
-	clip-path: circle(30% at right 70%);
-}
-
-.card::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: linear-gradient(#2196f3, #e91e63);
-	clip-path: circle(20% at 10% 10%);
-} */
-/* .container {
-	position: relative;
-	z-index: 1;
+	margin: 30px;
+	width: 75%;
 	display: flex;
-	justify-content: space-around;
 	align-items: center;
-	flex-wrap: wrap;
-	/* display: grid; */
-	/* margin: 20px 0;
-	font-family: "Odibee Sans", cursive;
-} */
-/* .container .card {
-	position: relative;
-	width: 350px;
-	height: 150px;
-	background: rgba(255, 255, 255, 0.05);
-	margin: 20px;
-	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-	border-radius: 25px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	backdrop-filter: blur(10px);
-} */
-/* .container .card .content {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	opacity: 0.85;
-	transition: 0.5s;
-}
-.container .card .content .contentBx {
-	opacity: 1;
-	top: 75px;
+	top: 50%;
+	left: 50%;
 	transform: translate(-50%, -50%);
-	transform: translateY(-20px);
-	/* transition-delay: 2s; */
-	/* transition: 0.8s ease-in-out;
-} */
-/* .container .card:hover .content .contentBx {
-	opacity: 0;
-	transform: translateY(-20px);
-} */
-
-/* .container .card .content .contentBx h3 {
-	color: #fff;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	font-weight: 500;
-	font-size: 18px;
-	text-align: center;
-	margin: 20px 0 10px;
-	line-height: 1.1em;
-} */
-/* .container .card .sci {
-	position: absolute;
-	transform: translateY(75%);
-	bottom: 95px;
-	display: flex;
-	padding: 5px 0px;
-	align-items: center;
-} */
-/* .container .card .sci li {
-	list-style: none;
-	margin: 0 30px;
-	transform: translateY(40px);
-	transition: 0.5s;
-	opacity: 0;
-	transition-delay: calc(0.1s * var(--i));
-} */
-/* .container .card:hover .sci li {
-	transform: translateY(0px);
-	opacity: 1;
-} */
-/* .container .card .sci li a {
-	color: #fff;
-	font-size: 16px;
-}  */ */
+}
 .footer {
 	position: fixed;
 	left: 0;
@@ -245,6 +48,3 @@ a:hover {
 	text-align: center;
 	background: rgb(20, 20, 24);
 }
-
-
-  
