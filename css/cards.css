@@ -10,8 +10,8 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	background: linear-gradient(#0a2a43 80%, #e91e63);
-	max-height: 100vh;
+	background: #0a2a43;
+	max-height: 50vh;
 	overflow: hidden;
 }
 section {
@@ -28,7 +28,7 @@ a:hover {
 
 /* Dropdown */
 
-.dropdowndiv {
+/* .dropdowndiv {
 	position: absolute;
 	left: 85%;
 	top: 15%;
@@ -47,7 +47,7 @@ a:hover {
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	white-space: nowrap;
-}
+} */
 
 .dd-button:after {
 	content: "";
@@ -121,10 +121,11 @@ a:hover {
 	text-align: center;
 	/* border: 4px solid #041420; */
 	border-radius: 5px;
+   margin-bottom: 10%;
 }
 .heading h1 {
 	color: #8eb9da;
-	font-size: 90px;
+	font-size: 70px;
 	font-family: "VT323", monospace;
 	letter-spacing: 13px;
 	text-transform: uppercase;
@@ -151,7 +152,7 @@ a:hover {
 	background: linear-gradient(#2196f3, #e91e63);
 	clip-path: circle(20% at 10% 10%);
 } */
-.container {
+/* .container {
 	position: relative;
 	z-index: 1;
 	display: flex;
@@ -159,10 +160,10 @@ a:hover {
 	align-items: center;
 	flex-wrap: wrap;
 	/* display: grid; */
-	margin: 20px 0;
+	/* margin: 20px 0;
 	font-family: "Odibee Sans", cursive;
-}
-.container .card {
+} */
+/* .container .card {
 	position: relative;
 	width: 350px;
 	height: 150px;
@@ -174,8 +175,8 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	backdrop-filter: blur(10px);
-}
-.container .card .content {
+} */
+/* .container .card .content {
 	position: relative;
 	display: flex;
 	justify-content: center;
@@ -190,14 +191,14 @@ a:hover {
 	transform: translate(-50%, -50%);
 	transform: translateY(-20px);
 	/* transition-delay: 2s; */
-	transition: 0.8s ease-in-out;
-}
-.container .card:hover .content .contentBx {
+	/* transition: 0.8s ease-in-out;
+} */
+/* .container .card:hover .content .contentBx {
 	opacity: 0;
 	transform: translateY(-20px);
-}
+} */
 
-.container .card .content .contentBx h3 {
+/* .container .card .content .contentBx h3 {
 	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 2px;
@@ -206,31 +207,31 @@ a:hover {
 	text-align: center;
 	margin: 20px 0 10px;
 	line-height: 1.1em;
-}
-.container .card .sci {
+} */
+/* .container .card .sci {
 	position: absolute;
 	transform: translateY(75%);
 	bottom: 95px;
 	display: flex;
 	padding: 5px 0px;
 	align-items: center;
-}
-.container .card .sci li {
+} */
+/* .container .card .sci li {
 	list-style: none;
 	margin: 0 30px;
 	transform: translateY(40px);
 	transition: 0.5s;
 	opacity: 0;
 	transition-delay: calc(0.1s * var(--i));
-}
-.container .card:hover .sci li {
+} */
+/* .container .card:hover .sci li {
 	transform: translateY(0px);
 	opacity: 1;
-}
-.container .card .sci li a {
+} */
+/* .container .card .sci li a {
 	color: #fff;
 	font-size: 16px;
-}
+}  */ */
 .footer {
 	position: fixed;
 	left: 0;
@@ -244,3 +245,6 @@ a:hover {
 	text-align: center;
 	background: rgb(20, 20, 24);
 }
+
+
+  
