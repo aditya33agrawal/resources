@@ -1,89 +1,301 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/preloader.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.css"
+		/>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Odibee+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Six+Caps&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pathway+Gothic+One&family=Six+Caps&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/glitch.css" />
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.6.7/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.6.7/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.6.7/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+		<title>(Re)Sources</title>
+	</head>
+	<body>
+		<div class="preloader">
+			<img
+				class="preload-img"
+				src="./components/pre-loader/loader.gif"
+				alt="preload"
+			/>
+			<h3>Getting there...</h3>
+		</div>
+		<div class="nav">
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="About">
+					<a href="./html/#">About</a>
+				</h2>
+			</div>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Team">
+					<a href="./html/team.html">Team</a>
+				</h2>
+			</div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Contact Us">
+					<a href="./html/ContactUs.html">Contact Us</a>
+				</h2>
+			</div>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+			<div class="nav-content">
+				<h2 class="glitch is-glitching" data-text="Sign In/Up">
+					<a href="#">Sign In/Up</a>
+				</h2>
+			</div>
+		</div>
+		<section>
+			<section id="sec">
+				<!-- <img src="components/assets/bg.jpg" id="bg" />
+				<img src="components/assets/moon.png" id="moon" />
+				<img src="components/assets/mountain.png" id="mountain" />
+				<img src="components/assets/road.png" id="road" /> -->
+				<img src="./components/MOSHED-2021-6-12-2-51-55.gif" alt="background" />
+				<div class="landing">
+					<!-- <h2 class="main-title" id="main_title">(Re)Sources</h2> -->
+					<!-- <a class="btn-main btn-1 main" id="main_btn" href="index.html#about"
+						>Get Started!</a
+					> -->
+					<!-- <div class="center">
+						<h2 class="center-text glitch is-glitching" data-text="Get Started">
+							<a href="index.html#about">Get Started!</a>
+						</h2>
+					</div> -->
+				</div>
+			</section>
+		</section>
+		<section>
+			<div class="about" id="about">
+				<h2 class="about-heading">About The Page</h2>
+				<p class="about-text">
+					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint,
+					assumenda. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					Amet possimus, odit nam ipsum, numquam est quod fugit voluptas
+					incidunt modi consectetur at optio atque harum impedit officiis.
+					Adipisci corporis, obcaecati totam architecto eius qui ut nulla
+					reiciendis facere et. Exercitationem, eveniet non voluptate laboriosam
+					magnam molestias veritatis nihil adipisci minus!
+				</p>
+			</div>
+		</section>
+		<section id="swiper">
+			<!--	<div class="container" id="container">
+				<div class="card">
+					<div class="cardTop">
+						<img src="./components/typewriter.jpeg" alt="" srcset="" />
+					</div>
+					<div class="cardBottom">
+						<div class="cardText">
+
+							<h3 class="cardTitle">Computer Science</h3>
+							<h4 class="cardInfo">Short Description</h4>
+
+							<div class="cardHoverText">
+								<a class="btn btn-2" href="#">About</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="cardTop">
+						<img src="./components/typewriter.jpeg" alt="" srcset="" />
+					</div>
+					<div class="cardBottom">
+						<div class="cardText">
+
+							<h3 class="cardTitle">Computer & Cummunications</h3>
+							<h4 class="cardInfo">Short Description</h4>
+
+							<div class="cardHoverText">
+								<a class="btn btn-2" href="#">About</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="cardTop">
+						<img src="./components/typewriter.jpeg" alt="" srcset="" />
+					</div>
+					<div class="cardBottom">
+						<div class="cardText">
+
+							<h3 class="cardTitle">Information Technology</h3>
+							<h4 class="cardInfo">Short Description</h4>
+
+							<div class="cardHoverText">
+								<a class="btn btn-2" href="#">About</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="card">
+					<div class="cardTop">
+						<img src="./components/typewriter.jpeg" alt="" srcset="" />
+					</div>
+					<div class="cardBottom">
+						<div class="cardText">
+
+							<h3 class="cardTitle">Data Science</h3>
+							<h4 class="cardInfo">Short Description</h4>
+
+							<div class="cardHoverText">
+								<a class="btn btn-2" href="#">About</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<div class="introcontainer" id="intro-container">
+				<!-- Slider main container -->
+				<div class="swiper-container">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card ong">
+									<img src="./components/retro1.jpeg" />
+									<div class="text"></div>
+									<div class="title-box">
+										<h1>Computer Science and Eningeering</h1>
+										<p>
+											The future of the creative industry starts here, by
+											Creatives, for Creatives.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card two">
+									<img src="./components/retro2.jpeg" alt="" />
+									<div class="text"></div>
+									<div class="title-box">
+										<h1>Information Technology</h1>
+										<p>
+											Learn, grow, and develop your skills -- Access tools that
+											accelerate your career and build your audience.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card three">
+									<img src="./components/typewriter.jpeg" alt="" />
+									<div class="text"></div>
+
+									<div class="title-box">
+										<h1>Data Science</h1>
+										<p>
+											Share, distribute, and promote your artwork. We showcase
+											and highlight creativity, helping you find and connect
+											with clients and your fans.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="cards">
+								<div class="card four">
+									<img src="./components/retro3.jpeg" alt="" />
+									<div class="text"></div>
+
+									<div class="title-box">
+										<h1>Computer and Communication Technology</h1>
+										<p>
+											We design your digital presence and collaborate to develop
+											your ideas into engaging, interactive, art and visual
+											experiences that keep you in control and in the spotlight.
+										</p>
+										<div class="seperator"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+
+					<!-- If we need navigation buttons -->
+					<div class="swiper-arrows">
+						<div class="swiper-button-prev"><span></span></div>
+						<div class="swiper-button-next"><span></span></div>
+					</div>
+
+					<!-- If we need scrollbar -->
+				</div>
+			</div>
+			<div class="footer">
+				<p>
+					Designed and developed by: Rhythm Bindal, Pratham Kumar, Aditya
+					Agrawal, and Kushagra Dhingra. 2021
+				</p>
+			</div>
+		</section>
+		<!-- The core Firebase JS SDK is always required and must be listed first -->
+		<script src="/__/firebase/8.6.7/firebase-app.js"></script>
+
+		<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+		<!-- Initialize Firebase -->
+		<script src="/__/firebase/init.js"></script>
+		<script src="js/scrollify.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+		<script src="js/script.js"></script>
+	</body>
 </html>
