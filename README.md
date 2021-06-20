@@ -1,6 +1,6 @@
 <h1 align="center">[Re]Sources</h1>
 <p align="center"><em>Providing you the resources you need to excel in engineering</em></p>
-<p align="center"><em>[Website](https://resources.codes/)</em></p>
+<p align="center"><em><a href="https://resources.codes/">Website</a></em></p>
 
 ## Table of Content
 * [About the Project](#About-the-project)
