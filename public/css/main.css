@@ -137,8 +137,10 @@ nav {
 	letter-spacing: 4px;
 }
 .about-text {
-	font-size: 35px;
-	font-family: "Odibee Sans", sans-serif;
+	font-size: 20px;
+	font-family: 'Avenir Next';
+    /* src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); File to be stored at your site */
+	/* font-family: "Odibee Sans", sans-serif; */
 	padding: 10px;
 	letter-spacing: 3px;
 }
