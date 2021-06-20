@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: rgba(75, 90, 90);
+	background-color: rgba(77, 89, 92);
 }
 #sec {
 	position: relative;
@@ -53,8 +53,8 @@ body {
 	position: absolute;
 	padding: 20px;
 	display: flex;
-	font-size: 48px;
-	color: rgb(185, 185, 190);
+	font-size: 32px;
+	color: rgb(232, 232, 224);
 	justify-content: flex-end;
 	z-index: 2000;
 	width: 100%;
@@ -62,10 +62,10 @@ body {
 .nav-content {
 	padding: 20px;
 }
-.blur {
-	filter: blur(1px);
-	-webkit-filter: blur(1px);
-}
+/* .blur {
+	filter: blur(0.5px);
+	-webkit-filter: blur(0.5px);
+} */
 .center {
 	position: absolute;
 	display: flex;
