@@ -10,10 +10,11 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	background: #0a2a43;
+	background-color: #E6E6FA;
+	/* background: #0a2a43;
 	background-image: url("../components/bg-glitch.jpeg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover; */
 	max-height: 100vh;
 	overflow: hidden;
 }
@@ -21,7 +22,7 @@ body {
 	padding: 20px;
 }
 .heading h1 {
-	color: #8eb9da;
+	color: #5858cf;
 	font-size: 70px;
 	font-family: "VT323", monospace;
 	letter-spacing: 13px;

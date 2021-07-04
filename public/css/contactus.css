@@ -1,10 +1,11 @@
 body {
 	margin: 0%;
 	padding: 0%;
-	background-image: url("../components/bg-glitch.jpeg");
+	/* background-image: url("../components/bg-glitch.jpeg");
 	background-repeat: no-repeat;
-	background-size: cover;
-	color: #fff;
+	background-size: cover; */
+	background-color: #E6E6FA;
+	color: rgb(0, 0, 0);
 }
 .contactus {
 	display: block;

@@ -10,10 +10,10 @@ body {
 	justify-content: center;
 	align-items: center;
 	flex-wrap: wrap;
-	background: linear-gradient(#0a2a43 80%, #1c6faf);
-	background-image: url("../components/bg-glitch.jpeg");
-	background-repeat: no-repeat;
-	background-size: cover;
+	background: #E6E6FA;
+	/* background-image: url("../components/bg-glitch.jpeg"); */
+	/* background-repeat: no-repeat;
+	background-size: cover; */
 	min-height: 100vh;
 }
 section {
@@ -25,12 +25,12 @@ section {
 	border-radius: 5px;
 }
 .heading h1 {
-	color: #8eb9da;
+	color: #fafafa;
 	font-size: 90px;
 	font-family: "VT323", monospace;
 	letter-spacing: 13px;
 	text-transform: uppercase;
-	text-shadow: 2px 2px #fff;
+	text-shadow: 2px 2px #5858cf;
 }
 /* body::before {
 	content: "";
@@ -67,7 +67,7 @@ section {
 	position: relative;
 	width: 300px;
 	height: 400px;
-	background: rgba(255, 255, 255, 0.05);
+	background: #BBBBF1;
 	margin: 20px;
 	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 	border-radius: 15px;

@@ -9,7 +9,7 @@
 }
 
 body {
-	background-color: rgba(77, 89, 92);
+	background-color: #BBBBF1;
 }
 #sec {
 	position: relative;
@@ -27,7 +27,7 @@ body {
 	bottom: 0;
 	width: 100%;
 	height: 100px;
-	background: linear-gradient(to top, rgb(75, 90, 90), transparent);
+	/* background: linear-gradient(to top, rgb(75, 90, 90), transparent); */
 	z-index: 1000;
 }
 #sec img {
@@ -87,19 +87,19 @@ body {
 .main-title {
 	position: relative;
 	margin-top: 57%;
-	top: 20%;
+	top: 0%;
 	left: 50%;
 	letter-spacing: 10px;
 	transform: translate(-50%, -50%);
 	font-size: 10vw;
 	font-family: "Odibee Sans", cursive;
-	color: #c7dae9;
-	text-shadow: 4px 5px #2989d2;
+	color: #FAFAE6;
+	text-shadow: 4px 5px #5858cf;
 	z-index: 2;
 }
 .down-arrow {
 	position: absolute;
-	top: 180%;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
@@ -116,17 +116,18 @@ nav {
 	z-index: 9;
 }
 .about {
-	height: 100vh;
+	height: 60vh;
 	margin: 20px;
-	padding: 10rem 2rem;
+	padding-top: 50px;
 	text-align: center;
+	background-color: #5858cf;
 }
 .introcontainer::before {
 	content: "";
 	position: absolute;
 	width: 100%;
 	height: 100px;
-	background: linear-gradient(to bottom, rgb(75, 90, 90), transparent);
+	/* background: linear-gradient(to bottom, rgb(75, 90, 90), transparent); */
 	/* background: red; */
 	z-index: 2000;
 }
@@ -334,7 +335,7 @@ nav {
 .swiper-container {
 	width: 100%;
 	height: 100vh;
-	background: rgb(75, 90, 90);
+	background: #E6FAE6;
 }
 .swiper-slide {
 	width: 500px;
@@ -343,7 +344,7 @@ nav {
 	margin: auto;
 	align-items: center;
 	justify-content: center;
-	background: rgb(75, 90, 90);
+	background: #E6FAE6;
 }
 .cards {
 	width: 100%;
