@@ -40,20 +40,12 @@ body {
 	pointer-events: none;
 }
 
-@media screen and (max-width: 768px) {
-	.container {
-		height: 100vh;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: column;
-	}
-}
+
 .nav {
 	position: absolute;
 	padding: 20px;
 	display: flex;
-	font-size: 32px;
+	font-size: 3vw;
 	color: rgb(232, 232, 224);
 	justify-content: flex-end;
 	z-index: 2000;
@@ -132,13 +124,13 @@ nav {
 	z-index: 2000;
 }
 .about-heading {
-	font-size: 70px;
+	font-size: 10vw;
 	padding: 20px;
 	font-family: "VT323", monospace;
 	letter-spacing: 4px;
 }
 .about-text {
-	font-size: 20px;
+	font-size: 1.5vw;
 	font-family: 'Avenir Next';
     /* src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); File to be stored at your site */
 	/* font-family: "Odibee Sans", sans-serif; */
