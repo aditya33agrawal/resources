@@ -50,6 +50,7 @@ body {
 	justify-content: flex-end;
 	z-index: 2000;
 	width: 100%;
+	margin-top: 10vh;
 }
 .nav-content {
 	padding: 20px;
@@ -78,7 +79,7 @@ body {
 }
 .main-title {
 	position: relative;
-	margin-top: 57%;
+	margin-top: 60%;
 	top: 0%;
 	left: 50%;
 	letter-spacing: 10px;
@@ -91,11 +92,19 @@ body {
 }
 .down-arrow {
 	position: absolute;
-	top: 70%;
+	top: 95%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
 	z-index: 3;
+}
+.icon {
+	margin: auto;
+    height: 30vh;
+    /* padding-top: inherit; */
+    margin-top: -10vh;
+	
+
 }
 nav {
 	position: absolute;
@@ -106,6 +115,7 @@ nav {
 	justify-content: center;
 	width: 100%;
 	z-index: 9;
+	
 }
 .about {
 	height: 60vh;
