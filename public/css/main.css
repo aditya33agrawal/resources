@@ -50,7 +50,6 @@ body {
 	justify-content: flex-end;
 	z-index: 2000;
 	width: 100%;
-	margin-top: 10vh;
 }
 .nav-content {
 	padding: 20px;
@@ -77,10 +76,18 @@ body {
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
+.landing-icon{
+	position: absolute;
+	top: 35%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 20rem;
+	
+}
 .main-title {
 	position: relative;
-	margin-top: 60%;
-	top: 0%;
+	margin-top: 57%;
+	top: 10%;
 	left: 50%;
 	letter-spacing: 10px;
 	transform: translate(-50%, -50%);
@@ -92,19 +99,11 @@ body {
 }
 .down-arrow {
 	position: absolute;
-	top: 95%;
+	top: 80%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	height: 150px;
 	z-index: 3;
-}
-.icon {
-	margin: auto;
-    height: 30vh;
-    /* padding-top: inherit; */
-    margin-top: -10vh;
-	
-
 }
 nav {
 	position: absolute;
